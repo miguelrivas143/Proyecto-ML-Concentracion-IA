@@ -17,6 +17,11 @@ El nuevo dataset está estructurado de la siguiente manera:
 Se descartó la métrica de la media y la mediana para poder garantizar un buen funcionamiento del modelo. Esto se debe a que los datos procesados ya habían sido normalizados con media 0. Finalmente, se eliminaron los valores nulos.
 
 
- 
+# Archivos
 
-   
+Data_Frame.py: Extracción de características matemáticas
+dataset_final.csv: Nuevo Dataset estructurado
+KNN.py: El algoritmo de KNN
+Modelo.py: El script compilable independiente que hace predicciones en la consola
+
+
