@@ -4,7 +4,7 @@ import pandas as pd
 from scipy.stats import skew
 
 
-ruta_carpeta = r'C:\Users\Miguel\OneDrive\Documentos\Semestre 3\Semestre 4\Semestre 5\Semestre 6\Semestre 7\Reto\REHAB\Rehab_exercise\d02_processed_data' #Ruta de la carpeta de los ejercicios con datos procesados
+ruta_carpeta = r'd02_processed_data' #Ruta de la carpeta de los ejercicios con datos procesados
 lista_dataframes = []
 
 nombres_originales = ['pitch1', 'yaw1', 'roll1', 'pitch2', 'yaw2', 'roll2', 'f1', 'f2', 'f3', 'f4', 'f5', 'pitch3'] #Nombre de los canales de los sensores
@@ -64,6 +64,6 @@ dataset_final = pd.concat(lista_dataframes, ignore_index=True)
 dataset_final = dataset_final.dropna()
 
 dataset_final.to_csv(
-    r'C:\Users\Miguel\OneDrive\Documentos\Semestre 3\Semestre 4\Semestre 5\Semestre 6\Semestre 7\Reto\Ejercicios\Proyecto-ML-Concentracion-IA' + r'\dataset_final.csv',
+    'dataset_final.csv',
     index=False
 )
